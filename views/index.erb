@@ -1,2 +1,12 @@
 <h1> Hello World </h1>
-<%= @inputs %>
+<form action='/mad_lib_answers' method='get'>
+	
+	<% @inputs.each do |input| %>
+		<%= input['part_of_speech'] %>: <input type='text' name=<%= rand(9999)%> />
+		<br />
+	<% end %>
+
+	<input type='hidden' value=<%= @mad_lib_name %> name='mad_lib_name' />
+
+	<input type='submit' value='Submit'>
+</form>

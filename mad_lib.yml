@@ -1,3 +1,6 @@
   - sentence_beginning: 'The lazy dog'
     sentence_end: 'over the brown fox'
     part_of_speech: 'verb'
+  - sentence_beginning: 'This little'
+    sentence_end: 'went to the market'
+    part_of_speech: 'animal name'
