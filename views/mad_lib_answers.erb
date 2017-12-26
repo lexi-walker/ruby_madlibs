@@ -1,0 +1,11 @@
+<h1> Your Mad Lib: </h1>
+
+<br />
+<% @inputs.each do |input| %>
+	<%= input['sentence_beginning'] %>
+	<strong> <%= @params[(@count_back + 1).to_s] %> </strong>
+	<%= input['sentence_end'] %>
+	<% @count_back += 1 %>
+	<br />
+<% end %>
+

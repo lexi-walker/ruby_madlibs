@@ -3,4 +3,4 @@
     part_of_speech: 'verb'
   - sentence_beginning: 'This little'
     sentence_end: 'went to the market'
-    part_of_speech: 'animal name'
+    part_of_speech: 'type of animal'

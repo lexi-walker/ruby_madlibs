@@ -14,4 +14,3 @@ class MadLibInputGenerator
 		end
 	end
 end
-

@@ -1,8 +1,8 @@
-<h1> Hello World </h1>
+<h1> Welcome to the Mad Lib Lab! </h1>
+<h3> We need some information from you before we can continue: </h3>
 <form action='/mad_lib_answers' method='get'>
-	
 	<% @inputs.each do |input| %>
-		<%= input['part_of_speech'] %>: <input type='text' name=<%= rand(9999)%> />
+		<%= input['part_of_speech'] %>: <input type='text' name=<%= @counter += 1 %> />
 		<br />
 	<% end %>
 
