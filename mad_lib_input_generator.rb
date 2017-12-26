@@ -1,8 +1,11 @@
 require 'yaml'
-class ProjectMain
+class MadLibInputGenerator
+	attr_reader :inputs
+
 	def initialize(mad_lib_name)
-		@sentences = load_mad_lib(mad_lib_name)
+		@inputs = load_mad_lib(mad_lib_name)
 	end
+
 	def load_mad_lib(mad_lib_name)
 		begin 
 			YAML.load(File.read("#{mad_lib_name}.yml"))
